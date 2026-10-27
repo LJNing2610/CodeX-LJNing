@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-10-27T00:08:51.9693140+08:00",
+  "codexVersion": "codex-cli 0.164.0-alpha.11.1",
+  "powershellVersion": "7.6.7",
+  "gitVersion": "git version 2.53.0.windows.3",
+  "ponytail": {
+    "repository": "https://github.com/DietrichGebert/ponytail.git",
+    "commit": "16f29800fd2681bdf24f3eb4ccffe38be3baec6b",
+    "dirty": true
+  },
+  "excluded": [
+    "personal profile",
+    "memory content",
+    "session history",
+    "auth.json",
+    "API keys",
+    "OAuth credentials",
+    "WeChat identity and pairing data",
+    "logs and databases",
+    "theme images and visual personalization",
+    "third-party Codex++ user scripts with unclear redistribution rights"
+  ]
+}

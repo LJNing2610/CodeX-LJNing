@@ -1,0 +1,110 @@
+# 可移植的 Codex 配置骨架
+# 新电脑恢复后需替换 <REDACTED> 并核对本机安装路径。
+
+model = "deepseek-flash"
+model_provider = "deepseek"
+web_search = "disabled"
+show_raw_agent_reasoning = true
+model_catalog_json = "__CODEX_HOME__/models.json"
+model_reasoning_effort = "low"
+sandbox_mode = "danger-full-access"
+approval_policy = "on-request"
+forced_login_method = "api"
+
+[model_providers.deepseek]
+name = "deepseek"
+base_url = "https://api.deepseek.com/"
+wire_api = "responses"
+experimental_bearer_token = "<REDACTED>"
+
+[features]
+goals = true
+js_repl = true
+coding_plan = false
+memories = true
+code_mode_only = false
+
+[features.code_mode]
+enabled = false
+
+[desktop]
+followUpQueueMode = "queue"
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "max"]
+show-ultra-in-model-picker-slider = false
+open-local-url-in-target-preference = "external-browser"
+localeOverride = "zh-CN"
+show-context-window-usage = true
+conversationDetailMode = "STEPS_COMMANDS"
+integratedTerminalShell = "powershell"
+
+[windows]
+sandbox = "elevated"
+
+[memories]
+generate_memories = true
+use_memories = true
+
+[mcp_servers.headroom]
+command = "__HOME__\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\headroom.exe"
+args = ["mcp", "serve"]
+startup_timeout_sec = 30
+
+[mcp_servers.codex_plus_collaboration]
+command = "__HOME__\\AppData\\Local\\Programs\\Codex++\\codex-plus-plus.exe"
+args = ["--codex-plus-agent-mcp", "--state-dir", "__HOME__\\.codex-session-delete"]
+enabled = true
+
+[marketplaces.personal]
+source_type = "local"
+source = "__HOME__"
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."superpowers@openai-curated"]
+enabled = true
+
+[plugins."hyperframes@openai-curated"]
+enabled = true
+
+[plugins."canva@openai-curated"]
+enabled = true
+
+[plugins."ponytail@personal"]
+enabled = true
+
+[plugins."github@openai-api-curated"]
+enabled = true
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[plugins."unified-computer-use@openai-bundled"]
+enabled = true

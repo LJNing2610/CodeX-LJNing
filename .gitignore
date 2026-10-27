@@ -1,0 +1,66 @@
+# 本机与编辑器状态
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# 密钥与本地凭据
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.token
+credentials*.json
+
+# 日志、转储和临时文件
+*.log
+*.dmp
+*.tmp
+*.bak
+*.bak-*
+*-log.txt
+
+# 不具跨设备价值的大型产物
+*.exe
+*.msi
+*.msix
+*.appx
+*.zip
+*.7z
+*.rar
+*.iso
+*.docx
+*.xlsx
+*.pptx
+*.pdf
+
+# 依赖与构建缓存
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+dist/
+build/
+.build/
+
+# 本机快捷方式、注册表快照和备份
+*.lnk
+*.reg
+_backup/
+**/_backup/
+**/backup/
+**/backup-*/
+
+# AI 恢复包不得包含本机会话、记忆或个性化资源
+ai-config/**/auth.json
+ai-config/**/sessions/
+ai-config/**/settings.sanitized.json
+ai-config/**/dream-skin/
+ai-config/memories/
+
