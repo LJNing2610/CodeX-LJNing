@@ -128,7 +128,7 @@ Codex **必须主动沉淀**以下内容到对应文档：
 
 ## 七、GitHub 同步
 
-- 远程仓库：`https://github.com/LJNing2610/CodeX-Public`（公开镜像）
+- 远程仓库：`https://github.com/LJNing2610/CodeX-LJNing`（公开镜像）
 - 分支：`main`
 - 本仓库默认同步通用 AI 规则、模板和脱敏配置；项目目录须单独审查后再加入
 - `.gitignore` 排除依赖、日志、转储、安装包、注册表快照和本机配置备份；提交前仍须检查敏感信息
@@ -175,7 +175,7 @@ Codex 安装完成后，先确认它能正常创建会话，再执行恢复。
 ### 8.3 克隆公开仓库
 
 ```powershell
-git clone https://github.com/LJNing2610/CodeX-Public.git "$HOME\Desktop\Workspace"
+git clone https://github.com/LJNing2610/CodeX-LJNing.git "$HOME\Desktop\Workspace"
 Set-Location "$HOME\Desktop\Workspace"
 ```
 
